@@ -1,0 +1,8 @@
+# Node
+node_modules
+
+# Project
+dist
+.DS_Store
+**/*/.DS_Store
+**/.DS_Store
