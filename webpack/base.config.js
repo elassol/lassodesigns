@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -9,7 +8,7 @@ module.exports = {
   },
   output: {
     filename: 'js/bundle.[name].js',
-    path: path.resolve(__dirname, '../dist/js'),
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/',
   },
   module: {
@@ -20,7 +19,7 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.html$/,
+        test: /\.(html)$/,
         use: {
           loader: 'html-loader',
           options: { minimize: true },
@@ -38,15 +37,6 @@ module.exports = {
             },
           },
         ],
-      },
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
-        options: {
-          fix: true,
-        },
       },
     ],
   },

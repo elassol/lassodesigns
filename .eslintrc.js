@@ -21,6 +21,7 @@ module.exports = {
             "ExportDeclaration": { "minProperties": 8, "multiline": true, "consistent": true }
         }],
         "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": false,
         "react/prefer-stateless-function": false,
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "react/jsx-filename-extension": "off",
