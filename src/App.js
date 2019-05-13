@@ -1,10 +1,11 @@
 import React, { PureComponent } from 'react';
+import Header from './components/Header/Header';
 
 class App extends PureComponent {
   render() {
     return (
-      <div>
-        <h1>Hello React</h1>
+      <div className="App">
+        <Header />
       </div>
     );
   }
