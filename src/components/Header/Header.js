@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <header>
         <div>
-          <LogotypeComponent name="lassodesigns" tagline="frontend artist" icon="/img/lassodesigns.png" />
+          <LogotypeComponent name="lassodesigns" tagline="frontend artist" icon="img/lassodesigns.png" />
         </div>
       </header>
     );

@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Visualizer = require('webpack-visualizer-plugin');
-const ManifestPlugin = require('webpack-manifest-plugin');
+
 
 const BaseConfig = require('./base.config');
 
@@ -15,7 +15,6 @@ module.exports = Object.assign({}, BaseConfig, {
     port: '8080',
   },
   plugins: [
-    new ManifestPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
