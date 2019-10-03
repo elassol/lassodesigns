@@ -1,0 +1,99 @@
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.full-background-image {
+  background: url('../img/background-blur.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+
+.wrapper {
+  display: block;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: #fff;
+}
+
+.wrapper-logo{
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 50px auto;
+}
+
+
+
+.sm-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.sm-list__title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-right: 15px;
+} 
+
+.sm-list a {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 5px;
+  width: 45px;
+  height: 45px;
+}
+
+.sm-list span {
+  display: none;
+}
+
+.sm-list__linkedin {
+
+}
+
+
+.sm-wrapper {
+  display: block;
+  width: 45px;
+  height: 45px;
+}
+
+.github-svg {
+  fill: red; 
+}
+
+.github-svg {
+  fill: #94d31b; 
+}
+
